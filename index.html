@@ -10,70 +10,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Alina Marin Cui</h1>
-        <p>Currently in my penultimate year studying Data Science and Decision Majoring in Computational Data Science at UNSW.</p>
-    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <h1>Alina Marin Cui</h1>
+                <p>Currently in my penultimate year studying Data Science and Decision Majoring in Computational Data Science at UNSW.</p>
+            </header>
+        </aside>
+        <main class="content">
+            <img src="BigBuilding.jpg" alt="Header Image" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Brief introduction about yourself.</p>
+            </section>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Job Title</h3>
+                    <h4>Company Name</h4>
+                    <p>Job description and responsibilities.</p>
+                </div>
+                <!-- Add more job sections as needed -->
+            </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Brief introduction about yourself.</p>
-    </section>
+            <section id="projects" class="grid-container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <p>Project description and key points.</p>
+                    <a href="project-link.com" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <p>Project description and key points.</p>
+                    <a href="project-link.com" target="_blank">View Project</a>
+                </div>
+                <!-- More project divs -->
+            </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Job Title</h3>
-            <h4>Company Name</h4>
-            <p>Job description and responsibilities.</p>
-        </div>
-        <!-- Add more job sections as needed -->
-    </section>
-
-    <section id="projects" class="grid-container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Project description and key points.</p>
-            <a href="project-link.com" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Project description and key points.</p>
-            <a href="project-link.com" target="_blank">View Project</a>
-        </div>
-        <!-- More project divs -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+            <section id="contact">
+                <h2>Contact</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -4,34 +4,66 @@ body {
     padding: 0;
     background-color: #d8e1e8;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
     background-color: #304674;
     color: white;
+    width: 250px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar header {
     text-align: center;
-    padding: 1em 0;
-    font-size: 1.5rem; /* 24px */
+    margin-bottom: 2em;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+    margin-bottom: 20px; /* Adds space between header image and nav */
 
 }
 
 nav {
     background: #022954;
     color: white;
+    margin-bottom: 20px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
 nav ul li a {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
 }
@@ -39,6 +71,8 @@ nav ul li a {
 section {
     padding: 20px;
     margin: 20px 0;
+    background: white;
+    border-radius: 8px;
 }
 
 .job, .project {
