@@ -22,11 +22,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .sidebar header {
     text-align: center;
     margin-bottom: 2em;
+    
 }
 
 .content {
@@ -76,10 +78,12 @@ section {
 }
 
 .job, .project {
-    background: #98bad5;
+    background: #979dac;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
+    border-radius: 4px;
+
 }
 
 form {
@@ -101,7 +105,7 @@ form input, form textarea {
 form button {
     margin-top: 10px;
     padding: 10px;
-    background: #304674;
+    background: #022954;
     color: white;
     border: none;
     border-radius: 4px;
@@ -109,7 +113,7 @@ form button {
 }
 
 form button:hover {
-    background: #304674;
+    background: #022954;
 }
 
 footer {
