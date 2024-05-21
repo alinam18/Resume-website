@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: 'Teachers', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #edf2fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    position: relative; /* Ensure positioning context for children */
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sliding Background */
+.sliding-background {
+    background-image: url('Header_Image.jpg');
+    background-repeat: repeat-x; /* Repeat the background image horizontally */
+    width: 200%; /* Double the width to enable smooth sliding */
+    height: 100vh; /* Full viewport height */
+    position: absolute; /* Position absolutely within the container */
+    top: 0;
+    left: 0;
+    animation: slide 30s linear infinite;/* Apply sliding animation */
+    position: fixed; 
+    z-index: -2;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0); /* Slide to half of its width */
+    }   
+}
+
+/* Welcome Section */
+#welcome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.welcome-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#welcome h2 {
+    font-size: 3rem;
+    position: relative;
+}
+
+/* Header Image */
+.header-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+    margin-bottom: 20px; /* Adds space between header image and nav */
+}
+
+/* Typed Out Effect */
+.typed-out {
+    overflow: hidden;
+    border-right: .12em solid #022954;
+    white-space: nowrap;
+    font-size: 1.0rem;
+    width: 0;
+    opacity: 0;
+    animation: none;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* Navigation Bar */
+/* nav {
+    background: #022954;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    color: white;
+}
+
+nav ul {
+    margin: 0;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+    padding: 1em;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f4f4f4;
+}
+
+nav ul li a::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 3px;
+    transition: all 0.2s linear;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    background-color: #f4f4f4;
+} */
+
+nav {
+    background: #022954;
+    color: white;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Job and Project Sections */
+.job, .project {
+    background: #ced4da;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #022954;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #022954;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: white;
+}
