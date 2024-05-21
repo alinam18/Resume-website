@@ -110,9 +110,15 @@ body {
 
 
 nav {
-    background: #022954;
+    background: linear-gradient(to right, #022954, #61a5c2);
+
+    /* background: #022954; */
     color: white;
     margin-bottom: 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav ul {
@@ -124,13 +130,16 @@ nav ul {
 
 nav ul li {
     margin: 10px 0;
+ 
 }
 
 nav ul li a {
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
+
 
 section {
     padding: 20px;
