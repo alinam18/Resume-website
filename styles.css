@@ -49,11 +49,11 @@ body {
 
 .typed-out{
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .12em solid #022954;
     white-space: nowrap;
     animation:
-    typing 1s steps(20, end) forwards;
-    font-size: 1.6rem;
+    typing 1s steps(50, end) forwards;
+    font-size: 1.0rem;
     width: 0;
 }
 
