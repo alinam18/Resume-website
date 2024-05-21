@@ -1,3 +1,43 @@
+.scrolling {
+    /* The image used */
+    background-image: url("BigBuilding.jpg");
+  
+    /* Double the width to enable smooth sliding */
+    width: 100vw; 
+    height: 100vh;
+  
+    /* Create the  scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+
+    /* Additional styles for   animation */
+    position: relative; /* Change from absolute to relative */
+    animation: zoom-out 5s ; /* Apply zoom-out animation */
+
+}
+
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1.5); /* Initial scale */
+    }
+    100% {
+        transform: scale(1); /* Zoom out to 80% of the original size */
+    }   
+}
+
+.text-overlay {
+    font-family: 'Teachers', sans-serif;
+    font-size: 9.5em;
+    color: #022954;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 body {
     font-family: 'Teachers', sans-serif;
     margin: 0;
