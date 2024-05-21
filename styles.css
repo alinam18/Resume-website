@@ -173,14 +173,36 @@ section {
     border-radius: 8px;
 }
 
+/* #experience {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    gap: 20px;
+} */
+
+/* #projects {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    gap: 20px; 
+} 
+*/
 .job, .project {
     background: #ced4da;
     padding: 10px;
     margin: 10px 0;
+    /* margin: 0; */
     border: 1px solid #ddd;
     border-radius: 4px;
-
+    /* word-wrap: break-word; */
+    /* box-sizing: border-box; 
+    height: 100%; */
 }
+/* 
+.typed-out {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    word-wrap: break-word; 
+} */
 
 form {
     display: flex;
