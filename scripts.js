@@ -15,11 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function checkElements() {
-        for (let i = 0; i < typedOutElements.length; i++) {
-            if (isElementInViewport(typedOutElements[i])) {
-                typedOutElements[i].style.animation = 'typing 3s steps(50, end) forwards';
+        typedOutElements.forEach(element => {
+            if (isElementInViewport(element) && !element.classList.contains('animated')) {
+                element.classList.add('animated');
+                element.style.animation = 'none'; // Reset any existing animation to ensure it can re-run
+                setTimeout(() => {
+                    element.style.animation = 'typing 3s steps(50, end) forwards';
+                }, 0); // Apply animation with a slight delay to trigger reflow
             }
-        }
+        });
     }
 
     window.addEventListener('scroll', checkElements);
